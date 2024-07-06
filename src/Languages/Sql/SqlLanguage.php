@@ -128,6 +128,9 @@ class SqlLanguage extends BaseLanguage
             (new KeywordPattern('WHEN'))->caseInsensitive(),
             (new KeywordPattern('WHERE'))->caseInsensitive(),
             (new KeywordPattern('ON'))->caseInsensitive(),
+            (new KeywordPattern('EXPLAIN ANALYZE'))->caseInsensitive(),
+            (new KeywordPattern('EXPLAIN FORMAT=JSON'))->caseInsensitive(),
+            (new KeywordPattern('EXPLAIN FORMAT=TREE'))->caseInsensitive(),
 
             // COMMENTS
             new SqlMultilineCommentPattern(),
